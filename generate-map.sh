@@ -11,7 +11,7 @@ do
         shift
         shift
         ;;
-        --mapname)
+        --map)
         map_name="$2"
         shift
         shift
