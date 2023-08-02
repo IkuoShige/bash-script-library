@@ -25,7 +25,7 @@
 ### rosbagから地図生成
 
 ```
-./generate-map --rosbag /path/to/your/rosbag.bag --mapname /path/to/your/map_name
+./generate-map --rosbag /path/to/your/rosbag.bag --map /path/to/your/map_name
 ```
 
 ### 複数のコマンドをTerminatorで分割
@@ -38,7 +38,7 @@
 ./sample_script_via_terminator.sh
 ```
 
-### ROS 2の宇部手のノードをkill
+### ROS 2のすべてのノードをkill
 
 ```
 ./kill_ros_node.sh
