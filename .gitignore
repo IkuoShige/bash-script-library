@@ -1,3 +1,5 @@
 terminator_window_old.sh
 *.yaml
 *.pgm
+.gitignore
+change_map_file_fast_lio.sh
