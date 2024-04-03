@@ -80,3 +80,10 @@ $ sudo apt install -y tmux
 
 ### terminator_window.sh
 * Terminatorでのショートカットの一部（画面の分割・移動）をbashで行うためのスクリプト
+
+### install_tmux.sh
+* tmuxのインストールスクリプト
+```
+wget https://raw.githubusercontent.com/IkuoShige/bash-script-library/main/install_tmux.sh
+bash install_tmux.sh
+```
