@@ -11,7 +11,8 @@ hostpc="192.168.10.115"
 ssh_password="ikuo"
 
 sudo parted /dev/mmcblk0 -s unit s print > structure_jetson_disk
-sshpass -p 'ikuo' scp -o StrictHostKeyChecking=no structure_jetson_disk "$user@$hostpc:/home/$user/dd_backup_jetson/$(date +%y%m%d)/"
+sshpass -p $ssh_password mkdir -p "$user@$hostpc:/home/$user/dd_backup_jetson/$(date +%y%m%d)/"
+sshpass -p $ssh_password scp -o StrictHostKeyChecking=no structure_jetson_disk "$user@$hostpc:/home/$user/dd_backup_jetson/$(date +%y%m%d)/"
 
 for partition in {2..44}; do
     partition_number=$(printf "%02d" $partition)
